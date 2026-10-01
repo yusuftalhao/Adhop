@@ -44,9 +44,9 @@ body {
 .option-button {
     cursor: pointer;
 
-    background-color: #c00000;
+    background-color: #e6b800;
     padding: 10px;
-    color: white;
+    color: #1a1a1a;
     border-radius: 5px;
     font-size: 14px;
 
@@ -54,13 +54,13 @@ body {
 }
 
 .option-button:hover {
-    background-color: #fc0303;
+    background-color: #ffd21f;
 }
 
 .option-button.disabled {
     cursor: default;
 
-    background-color: #520000;
+    background-color: #524100;
     color: grey;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 input:checked + .slider {
-    background-color: #fc0303;
+    background-color: #ffd21f;
 }
 
 input:checked + .slider:before {
@@ -343,8 +343,8 @@ svg {
 }
 
 .categoryOptionsSelector {
-    background-color: #c00000;
-    color: white;
+    background-color: #e6b800;
+    color: #1a1a1a;
     
     border: none;
     font-size: 14px;

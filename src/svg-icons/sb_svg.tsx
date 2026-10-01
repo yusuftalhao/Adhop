@@ -9,47 +9,33 @@ export interface SbIconProps {
   onClick?: () => void;
 }
 
+// AdHop logo, outline style: rounded-square ring with the jump arrow over a cut timeline.
 export default function SbSvg({
   id = "",
-  fill = "#ff0000",
+  fill = "#ffc21a",
   className = "",
   onClick
 }: SbIconProps): JSX.Element {
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      viewBox="0 0 565.15 568"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
       id={id}
       className={className}
       onClick={() => onClick?.() } >
-      <g
-      id="Layer_2"
-      data-name="Layer 2">
-        <g
-          id="Layer_1-2"
-          data-name="Layer 1"
-          style={{
-            fill
-          }}>
-          <path
-            d="M282.58,568a65,65,0,0,1-34.14-9.66C95.41,463.94,2.54,300.46,0,121A64.91,64.91,0,0,1,34,62.91a522.56,522.56,0,0,1,497.16,0,64.91,64.91,0,0,1,34,58.12c-2.53,179.43-95.4,342.91-248.42,437.3A65,65,0,0,1,282.58,568Zm0-548.31A502.24,502.24,0,0,0,43.4,80.22a45.27,45.27,0,0,0-23.7,40.53c2.44,172.67,91.81,330,239.07,420.83a46.19,46.19,0,0,0,47.61,0C453.64,450.73,543,293.42,545.45,120.75a45.26,45.26,0,0,0-23.7-40.54A502.26,502.26,0,0,0,282.58,19.69Z"
-            id="path8"
-            style={{
-              fill
-            }} />
-          <path
-            style={{
-              fill
-            }}
-            d="M 284.70508 42.693359 A 479.9 479.9 0 0 0 54.369141 100.41992 A 22.53 22.53 0 0 0 42.669922 120.41992 C 45.069922 290.25992 135.67008 438.63977 270.83008 522.00977 A 22.48 22.48 0 0 0 294.32031 522.00977 C 429.48031 438.63977 520.08047 290.25992 522.48047 120.41992 A 22.53 22.53 0 0 0 510.7793 100.41992 A 479.9 479.9 0 0 0 284.70508 42.693359 z M 220.41016 145.74023 L 411.2793 255.93945 L 220.41016 366.14062 L 220.41016 145.74023 z "
-            id="path10" />
-        </g>
+      <path
+        fillRule="evenodd"
+        style={{ fill }}
+        d="M126,16 H386 A110,110 0 0 1 496,126 V386 A110,110 0 0 1 386,496 H126 A110,110 0 0 1 16,386 V126 A110,110 0 0 1 126,16 Z M130,48 H382 A82,82 0 0 1 464,130 V382 A82,82 0 0 1 382,464 H130 A82,82 0 0 1 48,382 V130 A82,82 0 0 1 130,48 Z" />
+      <g transform="translate(256 256) scale(0.76) translate(-256 -259)" style={{ stroke: fill, fill }} strokeLinecap="round">
+        <line x1="118" y1="372" x2="182" y2="372" strokeWidth="52" />
+        <line x1="330" y1="372" x2="394" y2="372" strokeWidth="52" />
+        <circle cx="230" cy="372" r="10" stroke="none" fillOpacity="0.45" />
+        <circle cx="256" cy="372" r="10" stroke="none" fillOpacity="0.45" />
+        <circle cx="282" cy="372" r="10" stroke="none" fillOpacity="0.45" />
+        <path d="M150 300 C 162 150, 330 120, 352 262" style={{ fill: "none" }} strokeWidth="46" />
+        <path d="M299 260 L 402 244 L 361 321 Z" strokeWidth="18" strokeLinejoin="round" />
       </g>
-      <polygon style={{
-          fill: "#fff"
-        }}
-        points="411.28 255.94 220.41 145.74 220.41 366.14 411.28 255.94"
-      />
     </svg>
   );
 }

@@ -8,19 +8,20 @@
     --dialog-background: #181818;
     --dialog-border: white;
     --tab-color: #242424;
-    --tab-button-hover: #4d0000;
+    --tab-button-hover: #4d3d00;
     --tab-hover: white;
     --description: #dfdfdf;
-    --disabled: #520000;
+    --disabled: #524100;
     --slider: #707070;
     --title: #dad8d8;
     --border-color: #484848;
     --black: black;
     --white: white;
 
-    --selector-red: #c00000;
-    --selector-red-hover: #fc0303;
-    --tab-selected: #950000;
+    --selector-red: #e6b800;
+    --selector-red-hover: #ffd21f;
+    --tab-selected: #b38f00;
+    --selector-red-text: #1a1a1a;
 }
 
 [data-theme="light"] {
@@ -31,10 +32,10 @@
     --dialog-background: #f9f9f9;
     --dialog-border: #282828;
     --tab-color: #ababab;
-    --tab-button-hover: #750000;
+    --tab-button-hover: #756000;
     --tab-hover: #2e2e2e;
     --description: #262626;
-    --disabled: #ffcaca;
+    --disabled: #fff2c2;
     --slider: #bfbebe;
     --title: #707070;
     --border-color: #d9d9d9;
@@ -43,6 +44,7 @@
 }
 
 [data-theme="pride"] {
+    --selector-red-text: white;
     --menu-background: #181818d0;
 }
 
@@ -122,12 +124,12 @@ html, body {
 
 .tab-heading.selected {
     background-color: var(--selector-red);
-    color: white;
+    color: var(--selector-red-text);
 }
 
 .tab-heading:active {
     background-color: var(--tab-selected);
-    color: white;
+    color: var(--selector-red-text);
 }
 
 [data-theme="pride"] .tab-heading:nth-of-type(1) {
@@ -410,7 +412,7 @@ input[type='number'] {
 
     background-color: var(--selector-red);
     padding: 10px;
-    color: white;
+    color: var(--selector-red-text);
     border-radius: 5px;
     font-size: 14px;
 
@@ -710,7 +712,7 @@ svg {
 
 .optionsSelector {
     background-color: var(--selector-red);
-    color: white;
+    color: var(--selector-red-text);
     
     border: none;
     font-size: 14px;

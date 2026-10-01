@@ -6,7 +6,7 @@
   --dialog-border: white;
   --text: #c4c4c4;
   --title: #dad8d8;
-  --disabled: #520000;
+  --disabled: #524100;
   --black: black;
   --white: white;
 }
@@ -19,7 +19,7 @@
   --dialog-border: #282828;
   --text: #262626;
   --title: #707070;
-  --disabled: #ffcaca;
+  --disabled: #fff2c2;
   --black: white;
   --white: black;
 }
@@ -353,9 +353,9 @@ svg {
 .option-button {
   cursor: pointer;
 
-  background-color: #c00000;
+  background-color: #e6b800;
   padding: 10px;
-  color: white;
+  color: #1a1a1a;
   border-radius: 5px;
   font-size: 14px;
 
@@ -363,7 +363,7 @@ svg {
 }
 
 .option-button:hover:not(.disabled) {
-  background-color: #fc0303;
+  background-color: #ffd21f;
 }
 
 .option-button.disabled {

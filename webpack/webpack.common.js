@@ -159,6 +159,24 @@ module.exports = env => {
                         transform(content, path) {
                             if (path.match(/(\/|\\)_locales(\/|\\).+/)) {
                                 const parsed = JSON.parse(content.toString());
+
+                                // AdHop: rename the product in user-facing strings. Strings about the
+                                // SponsorBlock server, database and project credits keep the original name.
+                                const renamedKeys = ["fullName", "openPopup", "longDescription", "helpPageThanksForInstalling",
+                                    "helpPageSubmitting1", "zoomToFillUnsupported", "yttvLiveContentWarning", "nonMusicCategoryOnMusic",
+                                    "NoConfigurationsSetup", "whatForceChannelCheck", "submissionFailedServerSideAds", "copyDebugInformationOptions"];
+                                for (const key of renamedKeys) {
+                                    if (parsed[key]?.message) {
+                                        parsed[key].message = parsed[key].message.replace(/SponsorBlock/g, "AdHop");
+                                    }
+                                }
+                                if (path.match(/(\/|\\)_locales(\/|\\)en(\/|\\)/) && parsed.longDescription) {
+                                    parsed.longDescription.message = "AdHop lets you skip over sponsors, intros, outros, subscription reminders, and other annoying parts of YouTube videos. "
+                                        + "Segments are crowdsourced: anyone can submit the start and end times of sponsored segments, and once one person submits them, everyone else skips right over. "
+                                        + "You can also skip over non-music sections of music videos. "
+                                        + "AdHop is an open-source fork of SponsorBlock (GPL-3.0) and uses the SponsorBlock community database.";
+                                }
+
                                 if (env.browser.toLowerCase() === "safari") {
                                     parsed.fullName.message = parsed.fullName.message.match(/^.+(?= [-–])/)?.[0] || parsed.fullName.message;
                                     if (parsed.fullName.message.length > 40) {

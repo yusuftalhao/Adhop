@@ -1,10 +1,10 @@
 {
     "name": "__MSG_fullName__",
-    "short_name": "SponsorBlock",
+    "short_name": "AdHop",
     "version": "6.1.7",
     "default_locale": "en",
     "description": "__MSG_Description__",
-    "homepage_url": "https://sponsor.ajay.app",
+    "homepage_url": "https://github.com/yusuftalhao/Adhop",
     "icons": {
         "16": "icons/IconSponsorBlocker16px.png",
         "32": "icons/IconSponsorBlocker32px.png",

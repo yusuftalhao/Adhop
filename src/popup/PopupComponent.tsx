@@ -125,13 +125,13 @@ export const PopupComponent = () => {
 
             <header className={"sbPopupLogo " + (Config.config.cleanPopup ? "hidden" : "")}>
                 <img src={Config.config.prideTheme ? "icons/sb-pride.png" : "icons/IconSponsorBlocker256px.png"}
-                    alt="SponsorBlock Logo"
+                    alt="AdHop Logo"
                     width="40"
                     height="40"
                     id="sponsorBlockPopupLogo"
                 />
                 <p className="u-mZ">
-                    SponsorBlock
+                    AdHop
                 </p>
             </header>
 
@@ -254,7 +254,7 @@ export const PopupComponent = () => {
                         {chrome.i18n.getMessage("Donate")}
                     </a>
                     <br />
-                    <a href="https://github.com/ajayyy/SponsorBlock" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/yusuftalhao/Adhop" target="_blank" rel="noreferrer">
                         GitHub
                     </a>
                     <a href="https://discord.gg/SponsorBlock" target="_blank" rel="noreferrer">

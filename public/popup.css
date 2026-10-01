@@ -5,12 +5,13 @@
   --sb-grey-bg-color: #333;
   --sb-grey-bg-active-color: #444;
   --sb-grey-fg-color: #999;
-  --sb-red-bg-color: #cc1717;
-  --sb-red-bg-active-color: #ec1c1c;
+  --sb-red-bg-color: #e6b800;
+  --sb-red-bg-active-color: #ffd21f;
+  --sb-red-fg-color: #1a1a1a;
   --sb-skip-profile-bg: #292828;
   --sb-skip-profile-disabled: #808080;
   --sb-skip-profile-option-bg: #222;
-  --sb-skip-profile-highlighted: rgb(127, 0, 0);
+  --sb-skip-profile-highlighted: rgb(127, 102, 0);
 }
 
 .prideTheme {
@@ -20,6 +21,7 @@
   --sb-grey-fg-color: #FFED00;
   --sb-red-bg-color: #732982;
   --sb-red-bg-active-color: #004CFF;
+  --sb-red-fg-color: #fff;
   --sb-skip-profile-bg: #FFAFC8;
   --sb-skip-profile-disabled: #74D7EE;
   --sb-skip-profile-option-bg: #f687aa;
@@ -108,7 +110,7 @@
   padding: 8px;
   font-size: 1em;
   font-weight: 700;
-  color: var(--sb-main-fg-color);
+  color: var(--sb-red-fg-color);
   background-color: var(--sb-red-bg-color);
   cursor: pointer;
 }
@@ -473,7 +475,7 @@
   display: inline-block;
   -moz-border-radius: 28px;
   -webkit-border-radius: 28px;
-  color: var(--sb-main-fg-color);
+  color: var(--sb-red-fg-color);
   transition: 0.01s background-color;
   font-family: var(--sb-main-font-family);
   background-color: var(--sb-red-bg-color);
@@ -768,8 +770,8 @@
 }
 
 .optionsSelector {
-    background-color: #c00000;
-    color: white;
+    background-color: #e6b800;
+    color: #1a1a1a;
     
     border: none;
     font-size: 14px;

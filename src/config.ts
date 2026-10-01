@@ -490,7 +490,7 @@ const syncDefaults = {
     },
 
     colorPalette: {
-        red: "#780303",
+        red: "#806600",
         white: "#ffffff",
         locked: "#ffc83d"
     },
